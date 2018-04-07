@@ -1,0 +1,153 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html, main, .container{
+    height: 100%;
+    width: 100%
+}
+
+body{
+    width: 100%;
+    height:100%; 
+    background: lightgray;  
+    margin: 0;  
+}
+
+header{
+    float: left;
+    background: #ededed;
+    width: 100%;
+    height: 49px;    
+}
+
+main, nav, footer{
+    transition: width .1s linear;
+}
+
+main{
+    background: #ededed;
+    width: calc(100% - 227px);
+    height: calc(100% - 49px - 32px) ;
+    float: left;
+}
+
+nav{
+    background: #3a3f51;
+    height: calc(100% - 49px) ; 
+    width:227px;
+    float: left;    
+}
+
+
+footer{
+    background: #71a06a;
+    height: 32px;
+    float: left;
+    width: calc(100% - 227px);
+}
+
+.panel{
+    border: 1px solid #71a06a;
+    background: #d6e8d4;
+    margin: 15px 15px 0 15px;
+    padding: 5px;
+    border-radius: 15px;
+    height: calc(100% - 32px);
+}
+
+.divLogo{
+    height:100%;
+    width: 227px;
+    background: #71a06a;
+    float: left;
+}
+
+.contentHeader{
+    width: 100%;
+    height: 100%;    
+    border-bottom: 1px solid #ccc;
+}
+
+.contentHeader > div{
+    height: 100%;    
+}
+
+.contentHeader > div span{ 
+    line-height: 48px;
+}
+
+.bem-vindo{
+    display: inline-block;
+    font-weight: 700;
+    padding: 2px;
+    text-align: center;   
+    color: #6D6A69;
+    font-size: 20px;
+}  
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+.arrow-mini-menu{
+    background: #71a06a;
+    color: #e8efe7;
+    float: right;
+    border-bottom: 1px solid #302F2F;
+    text-align: center;
+    padding: 0;
+    width: 36px;
+    height: 28px;
+    display: block;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    margin-top: 7px;
+    font-size: 19px;
+    transition: all .1s linear 0s;    
+    line-height: 1.5;
+}
+
+.arrow-mini-menu:hover{
+    background:#8fb489;
+    color:#E4E4E4;
+    width:40px;
+    padding-right:5px
+}
+
+/* Menu apenas icones */
+.minified nav{
+    width:45px;
+}
+
+.minified main{
+    width: calc(100% - 45px);
+}
+
+.minified footer{
+    width: calc(100% - 45px);
+}
+
+.minified .arrow-mini-menu{
+    border-radius:0;
+    margin:0;
+    height:34px;
+    font-size:23px;
+    width: 100%
+}
+
+
+.pull-right {
+    float: right;
+    margin-right: 10px
+}
+
+.inline{
+    display: inline-block;
+}
+
+
+
+
+
